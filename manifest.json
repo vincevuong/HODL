@@ -2,7 +2,13 @@
   "manifest_version": 2,
 
   "name": "HODL",
-  "description": "A ticker that instantly without any confusion, tell you the market movement of bitcoin crpytocureency",
+  "icons":
+  {
+     "128": "Images/icon.png",
+     "16": "Images/icon.png",
+     "48": "Images/icon.png"
+  },
+  "description": "A ticker that instantly without any confusion, tell you the market movement of bitcoin crpytocurrency",
   "version": "1.0",
 
   "browser_action": {
