@@ -17,6 +17,19 @@
         font-size: 15px;
       }
 
+      .marquee {
+        /* height: 500px;
+        width: 500px; */
+        overflow: hidden;
+        position: relative;
+        animation: marquee 10s linear infinite;
+      }
+
+      @keyframes marquee {
+        0% { left: 0; }
+        100% { left: -100%; }
+      }
+
       #container {
         align-items: center;
         display: flex;
@@ -36,7 +49,8 @@
 
   
   <body id = "#btcBody">
-    <h1 id="topbar"></h1>
+    <h1 class = "marquee" id="topbar"></h1>
+    <h1 class = "marquee" id="topbar"></h1>
 
     <div id = "image">
       <!-- <img src='https://i0.wp.com/www.brainlesstales.com/images/misc/bitcoin-roller-coaster.gif?resize=1508%2C1508'/> -->

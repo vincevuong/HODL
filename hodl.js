@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 
   $.ajax({
     type: 'GET',
@@ -9,22 +9,22 @@ $(function(){
       var hourChanges = data[0].percent_change_1h;
       // var dayChanges =  data[0].percent_change_24h;
       var weekChanges = data[0].percent_change_7d;
-      
+
       var dayChanges = 10;
 
-      $('#topbar').prepend(`Price: ${price} || Hourly: ${hourChanges}% || 24 Hours: ${dayChanges}% || Weekly: ${weekChanges}%`);
-      
-      if(dayChanges > .50){
+      $('#topbar').prepend(`Price: ${price} | Hourly: ${hourChanges}% | 24H: ${dayChanges}% | Weekly: ${weekChanges}%`);
+
+      if (dayChanges > .50) {
         $('#image').append(`<img src="Images/btc_up.gif"></img>`);
       }
       else if (dayChanges < -.50) {
         $('#image').append(`<img src="Images/btc_down.gif"></img>`);
       }
-      else{
+      else {
         $('#image').append(`<img src="Images/btc_straight.gif"></img>`);
       }
-      
-      console.lgitog(price);
+
+      console.log(price);
       console.log(dayChanges);
     }
   });
