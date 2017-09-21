@@ -2,12 +2,13 @@
   "manifest_version": 2,
 
   "name": "HODL",
-  "description": "HODL!",
-  "version": "0.1",
+  "description": "A ticker that instantly without any confusion, tell you the market movement of bitcoin crpytocureency",
+  "version": "1.0",
 
   "browser_action": {
-    "default_icon": "hodor.png",
-    "default_popup": "popup.html"
+    "default_icon": "Images/icon.png",
+    "default_popup": "hodl.html",
+    "default_title": "Check me out!"
   },
   "permissions": [
     "activeTab",
