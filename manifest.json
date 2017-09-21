@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "HODL",
+  "description": "HODL!",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "hodor.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
