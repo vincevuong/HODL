@@ -7,10 +7,10 @@ $(function () {
     success: function (data) {
       var price = Number(data[0].price_usd).toFixed(2);
       var hourChanges = data[0].percent_change_1h;
-      // var dayChanges =  data[0].percent_change_24h;
+      var dayChanges =  data[0].percent_change_24h;
       var weekChanges = data[0].percent_change_7d;
 
-      var dayChanges = 10;
+      // var dayChanges = 0;
 
       $('#topbar').prepend(`Price: ${price} | Hourly: ${hourChanges}% | 24H: ${dayChanges}% | Weekly: ${weekChanges}%`);
 
