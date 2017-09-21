@@ -7,19 +7,24 @@ $(function(){
     success: function (data) {
       var price = Number(data[0].price_usd).toFixed(2);
       var hourChanges = data[0].percent_change_1h;
-      var dayChanges =  data[0].percent_change_24h;
+      // var dayChanges =  data[0].percent_change_24h;
       var weekChanges = data[0].percent_change_7d;
       
+      var dayChanges = 10;
 
       $('#topbar').prepend(`Price: ${price} || Hourly: ${hourChanges}% || 24 Hours: ${dayChanges}% || Weekly: ${weekChanges}%`);
       
-      if(dayChanges > 0){
-        $('#image').append('<img src=\"images/bitcoin_ride_up.gif\"></img>');
-      }else{
-        $('#image').append('<img src=\"images/bitcoin_ride_down.gif\"></img>');
+      if(dayChanges > .50){
+        $('#image').append(`<img src="Images/btc_up.gif"></img>`);
+      }
+      else if (dayChanges < -.50) {
+        $('#image').append(`<img src="Images/btc_down.gif"></img>`);
+      }
+      else{
+        $('#image').append(`<img src="Images/btc_straight.gif"></img>`);
       }
       
-      console.log(price);
+      console.lgitog(price);
       console.log(dayChanges);
     }
   });
