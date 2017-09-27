@@ -10,7 +10,7 @@ A chrome extension that is an accurate yet simple visual representation and will
 
 ## Motivation
 
-A short hackathon project completed within 4 hours of coding. The project was to demonstrate our skillset at an early stage of software development. We used an AJAX GET request to arrogate data from the coinmarketcap.com API. Based on the BTC 24 hour market change, the extension will display a .gif file that illustrates the market direction.
+A short hackathon project completed within 4 hours from ideation to production product. The project was to demonstrate our skillset at an early stage of software development. We used an AJAX GET request to arrogate data from the coinmarketcap.com API. Based on the BTC 24 hour market change, the extension will display a .gif file that illustrates the market's direction.
 
 
 ## Installation
