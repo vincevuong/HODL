@@ -1,70 +1,63 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
-  <head>
-    <title>HODL</title>
-    <style type="text/css">
-      body {
-        margin: 5px;
-        white-space: nowrap;
-      }
 
-      h1 {
-        font-size: 15px;
-      }
-
-      p {
-        text-align: right;
-      }
-
-      img {
-        text-align: center;
+<head>
+  <title>HODL</title>
+  <style type="text/css">
+    body {
+      margin: 2px;
+      white-space: nowrap;
     }
 
-      .marquee {
-        /* height: 500px;
+    h1 {
+      font-size: 15px;
+    }
+
+    img {
+      text-align: center;
+    }
+    #topbar{
+      width: 100%;
+    }
+    .marquee {
+      /* height: 500px;
         width: 500px; */
-        overflow: hidden;
-        position: relative;
-        animation: marquee 10s linear infinite;
+      overflow: hidden;
+      position: relative;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        left: 0;
       }
-
-      @keyframes marquee {
-        0% { left: 0; }
-        100% { left: -100%; }
+      100% {
+        left: -100%;
       }
+    }
 
-      #container {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
+    #container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="hodl.js"></script>
-  </head>
 
-  
-  <body id = "#btcBody">
-    <h1 class = "marquee" id="topbar"></h1>
-    <h1 class = "marquee" id="topbar"></h1>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="hodl.js"></script>
+</head>
 
-    <div style="text-align:center" id = "image">
 
-      <!-- placeholder -->
-      <!-- <img src='https://i0.wp.com/www.brainlesstales.com/images/misc/bitcoin-roller-coaster.gif?resize=1508%2C1508'/> -->
-    </div>
-    <p style="text-align:center" id="bottombar">Made with &#127866; || powered by CoinMarketCap API</p>
-  </body>
+<body id="#btcBody">
+  <h1 class="marquee" id="topbar"></h1>
+  <h1 class="marquee" id="topbar"></h1>
+
+  <div style="text-align:center" id="image">
+
+
+  </div>
+  <p style="text-align:center" id="bottombar">Made with &#127866; || powered by CoinMarketCapAPI</p>
+</body>
+
 </html>

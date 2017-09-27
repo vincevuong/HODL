@@ -10,7 +10,7 @@ $(function () {
       var dayChanges =  data[0].percent_change_24h;
       var weekChanges = data[0].percent_change_7d;
 
-      // var dayChanges = 0;
+      // var dayChanges = 10;
 
       $('#topbar').prepend(`Price: ${price} | Hourly: ${hourChanges}% | 24H: ${dayChanges}% | Weekly: ${weekChanges}%`);
 
