@@ -1,7 +1,7 @@
 # HODL
 
 <p align="center">
-  <img src="https://github.com/vincevuong/HODL/blob/master/Images/btc_crazyCoaster.gif?raw=true">
+  <img width="250" height="250"src="https://github.com/vincevuong/HODL/blob/master/Images/btc_crazyCoaster.gif?raw=true">
 </p>
 
 ## Synopsis
