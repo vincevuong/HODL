@@ -6,7 +6,7 @@
 
 ## Synopsis
 
-A chrome extension that is an accurate yet simple visual representation and will assist you on making a sound decision on your cryptocurrency endeavors. **Specifically in Bitcoin.**
+A chrome extension that is an accurate yet simple visual representation and will assist you on making a sound decision on your cryptocurrency endeavors. **Specifically for Bitcoin.**
 
 ## Motivation
 
